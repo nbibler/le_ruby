@@ -14,11 +14,7 @@ module Le
 
     opt_datahub_enabled = options[:datahub_enabled]     || false
     opt_datahub_endpoint = options[:datahub_endpoint]   || ['', 10000]
-    opt_datahub_ip = options[:datahub_ip]               || ''
-    opt_datahub_port    = options[:datahub_port]        || 10000
     opt_host_id = options[:host_id] || ''
-    opt_host_name_enabled = options[:host_name_enabled] || false
-    opt_host_name = options[:host_name]                 || ''
     opt_custom_host = options[:custom_host]             || [false, '']
 
     opt_udp_port = options[:udp_port]                   || nil
