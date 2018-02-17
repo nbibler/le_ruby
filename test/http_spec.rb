@@ -26,7 +26,7 @@ describe Le::Host::HTTP do
   specify { host.local.must_equal false }
   specify { host.debug.must_equal false }
   specify { host.ssl.must_equal false }
-  specify { host.udp_port.must_equal nil }
+  specify { host.udp_port.must_be_nil }
   specify {host_id.must_equal ""}
   specify {custom_host.must_equal [false, ""]}
 
