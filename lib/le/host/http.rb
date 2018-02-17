@@ -75,7 +75,7 @@ module Le
 
 
 # Check if host_id is empty -- if not assign, if so, make it an empty string.
-       if !host_id.empty?
+        if !host_id.empty?
           @host_id = host_id
           @host_id = "host_id=#{host_id}"
         else
@@ -85,7 +85,7 @@ module Le
 
 
 #assign host_name, if no host name is given and host_name_enabled = true... assign a host_name based on the machine name.
-       if @host_name_enabled
+        if @host_name_enabled
           if host_name.empty?
             @host_name=Socket.gethostname
           end

@@ -45,11 +45,11 @@ module Le
 
     if (!opt_datahub_enabled && !opt_udp_port)  # test Token only when DataHub and UDP are not enabled
       if (token =~ /\A(urn:uuid:)?[\da-f]{8}-([\da-f]{4}-){3}[\da-f]{12}\z/i) == nil
-         puts "\nLE: It appears the LOGENTRIES_TOKEN you entered is invalid!\n"
+        puts "\nLE: It appears the LOGENTRIES_TOKEN you entered is invalid!\n"
       else
         (token="")
-     end
-   end
+      end
+    end
   end
 
 end
